@@ -16,26 +16,6 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
-def release_resources():
-    """关闭时释放启动阶段加载的资源。
-
-    进程退出时操作系统本来就会回收全部内存，所以这不完全是「防泄漏」——意义在于：
-    释放时机确定，不依赖进程回收；而且如果模型跑在显卡上，torch 的缓存分配器
-    不会主动把显存还回去，必须显式清一次。
-    """
-    for name, module in (
-        ("reranker", reranker),
-        ("chat models", generator),
-        ("vector store", vector_store),
-        ("bm25 index", bm25_retriever),
-    ):
-        try:
-            module.release()
-        except Exception:
-            logger.exception("释放 %s 失败", name)
-    logger.info("已释放模型与客户端资源")
-
-
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # 启动前需要加载的资源：默认知识库不存在时自动建库并入库
@@ -64,7 +44,7 @@ async def lifespan(app: FastAPI):
     else:
         logger.info("未配置 RERANKER_PATH，跳过 reranker 预热")
     yield
-    release_resources()
+    logger.info("已关闭")
 
 
 app = FastAPI(lifespan=lifespan, title="RAG智能回答系统")
@@ -91,4 +71,4 @@ app.mount(
 )
 
 if __name__ == '__main__':
-    uvicorn.run("main:app",port=8000,reload=True)
+    uvicorn.run("main:app", port=8000, reload=True)
