@@ -1,0 +1,2002 @@
+[
+  {
+    "id": "case-001",
+    "text": "海尔 冰箱：冰箱冷藏室底部积水。排水孔被菜叶和食物残渣堵塞，用细铁丝疏通后倒入一杯温水冲洗，积水立即排空。建议每月清理一次排水孔。",
+    "category": "冰箱",
+    "brand": "海尔",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-002",
+    "text": "美的 冰箱 E1：冰箱完全不制冷，压缩机运转但不降温。检漏发现蒸发器管接头有油迹，判断制冷剂泄漏，补漏后抽真空加注制冷剂恢复正常。",
+    "category": "冰箱",
+    "brand": "美的",
+    "fault_code": "E1",
+    "difficulty": "中等",
+    "cost": 280,
+    "warranty": false
+  },
+  {
+    "id": "case-003",
+    "text": "西门子 冰箱：冷藏室后壁结冰过厚，抽屉拉不开。门封条老化导致密封不严，湿气进入后结霜。更换门封条并清理冰层后正常。",
+    "category": "冰箱",
+    "brand": "西门子",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-004",
+    "text": "容声 冰箱：冰箱门关闭后有明显缝隙，用手能轻松抽出一张纸。用吹风机加热门封条使其恢复弹性，再调整门铰链位置，密封恢复。",
+    "category": "冰箱",
+    "brand": "容声",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-005",
+    "text": "松下 冰箱：冰箱运行噪音明显增大，夜间尤其明显。检查发现压缩机减震胶垫老化塌陷，更换胶垫并调整管路间距后噪音消除。",
+    "category": "冰箱",
+    "brand": "松下",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 180,
+    "warranty": false
+  },
+  {
+    "id": "case-006",
+    "text": "海尔 冰箱：冰箱不停机，冷藏室温度过低导致蔬菜冻伤。温控器感温包失效，更换温控器后压缩机按设定正常启停。",
+    "category": "冰箱",
+    "brand": "海尔",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 220,
+    "warranty": false
+  },
+  {
+    "id": "case-007",
+    "text": "美菱 冰箱：冰箱压缩机完全不启动，只听到咔哒声。测量启动继电器已烧毁，更换同规格PTC启动器后压缩机正常启动。",
+    "category": "冰箱",
+    "brand": "美菱",
+    "fault_code": "无",
+    "difficulty": "困难",
+    "cost": 420,
+    "warranty": false
+  },
+  {
+    "id": "case-008",
+    "text": "LG 冰箱：风冷冰箱冷藏室不冷但冷冻室正常。检查化霜定时器损坏，蒸发器被厚冰堵死阻碍风道，更换定时器并清理冰层后恢复。",
+    "category": "冰箱",
+    "brand": "LG",
+    "fault_code": "无",
+    "difficulty": "困难",
+    "cost": 550,
+    "warranty": false
+  },
+  {
+    "id": "case-009",
+    "text": "三星 冰箱：冰箱内有明显酸臭味，清洗后仍有残留。发现接水盘积水发霉，拆下接水盘清洗消毒并疏通排水管路后异味消除。",
+    "category": "冰箱",
+    "brand": "三星",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-010",
+    "text": "博世 冰箱：冰箱内照明灯不亮，但制冷正常。灯座接触不良且灯泡已烧毁，更换同规格灯泡后恢复正常。",
+    "category": "冰箱",
+    "brand": "博世",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 60,
+    "warranty": true
+  },
+  {
+    "id": "case-011",
+    "text": "海信 冰箱 E2：冰箱冷冻室结霜严重但冷藏室温度偏高。风门电机卡死无法打开，冷气送不到冷藏室，更换风门电机后恢复。",
+    "category": "冰箱",
+    "brand": "海信",
+    "fault_code": "E2",
+    "difficulty": "中等",
+    "cost": 260,
+    "warranty": false
+  },
+  {
+    "id": "case-012",
+    "text": "美的 冰箱：冰箱冷凝器表面积满灰尘，两侧发烫且耗电增加。用吸尘器和软毛刷清理冷凝器及压缩机舱后散热恢复。",
+    "category": "冰箱",
+    "brand": "美的",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-013",
+    "text": "新飞 冰箱：冰箱运行中周期性发出咕噜声，制冷效果时好时坏。系统内混入空气，重新抽真空并加注制冷剂后恢复正常。",
+    "category": "冰箱",
+    "brand": "新飞",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 320,
+    "warranty": false
+  },
+  {
+    "id": "case-014",
+    "text": "海尔 冰箱：冰箱门搁架被重物压裂。订购同型号搁架自行更换，同时提醒用户避免在门架放置过重液体容器。",
+    "category": "冰箱",
+    "brand": "海尔",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-015",
+    "text": "松下 冰箱：冰箱冷藏室温度波动大，忽冷忽热。温度传感器阻值漂移，更换传感器后温度稳定在设定值。",
+    "category": "冰箱",
+    "brand": "松下",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 240,
+    "warranty": false
+  },
+  {
+    "id": "case-016",
+    "text": "小天鹅 洗衣机 E4：滚筒洗衣机脱水时剧烈抖动并移位。底脚有一个未着地、桶内衣物缠绕一侧，重新铺平衣物并调平底脚后恢复。",
+    "category": "洗衣机",
+    "brand": "小天鹅",
+    "fault_code": "E4",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-017",
+    "text": "海尔 洗衣机 E2：波轮洗衣机进水不停，水从溢流管溢出。进水阀阀芯被水垢卡住无法闭合，更换进水阀后正常。",
+    "category": "洗衣机",
+    "brand": "海尔",
+    "fault_code": "E2",
+    "difficulty": "中等",
+    "cost": 150,
+    "warranty": false
+  },
+  {
+    "id": "case-018",
+    "text": "荣事达 洗衣机：洗衣机不排水，桶内积水无法排出。排水过滤器被硬币和纽扣卡住，拆下清理异物后排水恢复。",
+    "category": "洗衣机",
+    "brand": "荣事达",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-019",
+    "text": "美的 洗衣机 E3：滚筒洗衣机门锁死无法打开。门锁电磁阀损坏，断电五分钟仍无反应，更换门锁组件后正常。",
+    "category": "洗衣机",
+    "brand": "美的",
+    "fault_code": "E3",
+    "difficulty": "中等",
+    "cost": 200,
+    "warranty": false
+  },
+  {
+    "id": "case-020",
+    "text": "西门子 洗衣机：洗衣机脱水时发出刺耳金属摩擦声。检查发现内桶轴承磨损，更换轴承和水封后噪音消除。",
+    "category": "洗衣机",
+    "brand": "西门子",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 260,
+    "warranty": false
+  },
+  {
+    "id": "case-021",
+    "text": "松下 洗衣机：洗衣机完全不转动但能进水。电机碳刷磨损殆尽，更换碳刷后电机恢复运转。",
+    "category": "洗衣机",
+    "brand": "松下",
+    "fault_code": "无",
+    "difficulty": "困难",
+    "cost": 380,
+    "warranty": false
+  },
+  {
+    "id": "case-022",
+    "text": "LG 洗衣机 UE：洗衣机因衣物偏置触发不平衡报警。暂停后重新整理衣物并减少装载量，重新启动脱水程序后正常。",
+    "category": "洗衣机",
+    "brand": "LG",
+    "fault_code": "UE",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-023",
+    "text": "海信 洗衣机：洗衣机进水管接口处渗水。橡胶垫圈老化开裂，更换新的进水软管垫圈并重新拧紧后不再渗漏。",
+    "category": "洗衣机",
+    "brand": "海信",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 80,
+    "warranty": true
+  },
+  {
+    "id": "case-024",
+    "text": "小天鹅 洗衣机：洗衣机洗涤时波轮转动但内桶不转。离合器抱簧断裂，更换离合器后恢复正常洗涤和脱水。",
+    "category": "洗衣机",
+    "brand": "小天鹅",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 220,
+    "warranty": false
+  },
+  {
+    "id": "case-025",
+    "text": "TCL 洗衣机 E1：洗衣机进水很慢甚至不进，进水阀滤网被泥沙堵住。拆下滤网清洗后进水流量恢复正常。",
+    "category": "洗衣机",
+    "brand": "TCL",
+    "fault_code": "E1",
+    "difficulty": "中等",
+    "cost": 170,
+    "warranty": false
+  },
+  {
+    "id": "case-026",
+    "text": "海尔 洗衣机：洗衣机排水管高度过低导致边进水边排水。将排水管末端抬高至离地六十厘米以上固定后问题解决。",
+    "category": "洗衣机",
+    "brand": "海尔",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-027",
+    "text": "美的 洗衣机：洗衣机主板烧毁，面板无任何显示。检查为电压波动导致电源模块击穿，更换主板后各项功能恢复。",
+    "category": "洗衣机",
+    "brand": "美的",
+    "fault_code": "无",
+    "difficulty": "困难",
+    "cost": 450,
+    "warranty": false
+  },
+  {
+    "id": "case-028",
+    "text": "三洋 洗衣机：洗衣机脱水桶不转但电机有嗡嗡声。电容容量衰减，更换同规格启动电容后脱水正常。",
+    "category": "洗衣机",
+    "brand": "三洋",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 190,
+    "warranty": false
+  },
+  {
+    "id": "case-029",
+    "text": "松下 洗衣机：洗衣机内桶有黑色污垢脱落沾到衣物上。拆下波轮清洗内桶外壁和过滤网，用专用清洁剂空转清洗后消除。",
+    "category": "洗衣机",
+    "brand": "松下",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-030",
+    "text": "荣事达 洗衣机 E5：洗衣机显示水位传感器故障。压力软管脱落导致气压传递中断，重新连接软管并密封后报警消除。",
+    "category": "洗衣机",
+    "brand": "荣事达",
+    "fault_code": "E5",
+    "difficulty": "中等",
+    "cost": 230,
+    "warranty": false
+  },
+  {
+    "id": "case-031",
+    "text": "格力 空调：壁挂空调出风温度不够冷，细管结霜。检漏发现连接管喇叭口轻微泄漏，重新扩口紧固后抽真空加注制冷剂。",
+    "category": "空调",
+    "brand": "格力",
+    "fault_code": "无",
+    "difficulty": "困难",
+    "cost": 380,
+    "warranty": false
+  },
+  {
+    "id": "case-032",
+    "text": "美的 空调：空调不制冷，滤网积满灰尘。清洗滤网并冲洗室外机散热片后，出风温度和风量明显改善。",
+    "category": "空调",
+    "brand": "美的",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-033",
+    "text": "海尔 空调：空调室内机滴水，墙面被浸湿。排水管被灰尘堵塞，用高压气吹通排水管后冷凝水正常排出。",
+    "category": "空调",
+    "brand": "海尔",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-034",
+    "text": "奥克斯 空调：空调开机后室外机不启动，仅室内机吹风。室外机电容鼓包失效，更换压缩机运行电容后外机正常启动。",
+    "category": "空调",
+    "brand": "奥克斯",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 240,
+    "warranty": false
+  },
+  {
+    "id": "case-035",
+    "text": "志高 空调 E5：空调显示通讯故障代码，室内外机无法联动。连接信号线在穿墙处被老鼠咬断，重新接线并做绝缘处理后恢复。",
+    "category": "空调",
+    "brand": "志高",
+    "fault_code": "E5",
+    "difficulty": "中等",
+    "cost": 280,
+    "warranty": false
+  },
+  {
+    "id": "case-036",
+    "text": "格力 空调：空调运行时室内机发出呼呼异响。贯流风扇叶片积尘导致动平衡失效，清洗叶片后噪音消除。",
+    "category": "空调",
+    "brand": "格力",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 200,
+    "warranty": false
+  },
+  {
+    "id": "case-037",
+    "text": "科龙 空调：空调遥控器按键无反应但机器正常。遥控器电池仓氧化，清理触点并更换电池后恢复正常。",
+    "category": "空调",
+    "brand": "科龙",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-038",
+    "text": "美的 空调：空调制热效果差，出风温温的不热。四通换向阀串气，更换四通阀后制热恢复正常。",
+    "category": "空调",
+    "brand": "美的",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 300,
+    "warranty": false
+  },
+  {
+    "id": "case-039",
+    "text": "海信 空调：空调压缩机启动后立即停机，反复启停。压缩机绕组对地绝缘下降，更换压缩机后运行正常。",
+    "category": "空调",
+    "brand": "海信",
+    "fault_code": "无",
+    "difficulty": "困难",
+    "cost": 520,
+    "warranty": false
+  },
+  {
+    "id": "case-040",
+    "text": "松下 空调：空调出风有霉味。蒸发器翅片和接水盘滋生霉菌，用专用清洗剂喷洗蒸发器并开送风模式吹干后异味消除。",
+    "category": "空调",
+    "brand": "松下",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-041",
+    "text": "大金 空调：空调室外机风扇转速忽高忽低且噪音大。风扇电机轴承缺油磨损，更换外风机电机后运转平稳。",
+    "category": "空调",
+    "brand": "大金",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 260,
+    "warranty": false
+  },
+  {
+    "id": "case-042",
+    "text": "格兰仕 空调：空调设定温度与实际出风不符，频繁启停。室内机温度传感器阻值漂移，更换传感器后控温准确。",
+    "category": "空调",
+    "brand": "格兰仕",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 220,
+    "warranty": false
+  },
+  {
+    "id": "case-043",
+    "text": "海尔 空调：空调外机被柳絮和落叶堵塞，散热不良导致保护停机。清理外机周围及散热片杂物后恢复正常运行。",
+    "category": "空调",
+    "brand": "海尔",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-044",
+    "text": "格力 空调：空调加长管路后制冷效果明显下降。管路过长且未补充制冷剂，按每米追加标准补充冷媒后效果恢复。",
+    "category": "空调",
+    "brand": "格力",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 340,
+    "warranty": false
+  },
+  {
+    "id": "case-045",
+    "text": "美的 空调：空调室内机面板显示正常但导风板不摆动。导风电机齿轮被异物卡住，清理后手动复位恢复正常摆动。",
+    "category": "空调",
+    "brand": "美的",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-046",
+    "text": "美的 微波炉：微波炉灯亮转盘转但不加热。高压保险丝熔断且磁控管灯丝开路，更换保险丝和磁控管后恢复。",
+    "category": "微波炉",
+    "brand": "美的",
+    "fault_code": "无",
+    "difficulty": "困难",
+    "cost": 260,
+    "warranty": false
+  },
+  {
+    "id": "case-047",
+    "text": "格兰仕 微波炉：微波炉内壁打火并伴随噼啪声。云母片积油污碳化，更换云母片并彻底清洁内腔后打火消除。",
+    "category": "微波炉",
+    "brand": "格兰仕",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 120,
+    "warranty": false
+  },
+  {
+    "id": "case-048",
+    "text": "松下 微波炉：微波炉转盘不转，加热仍正常。转盘底座三角轮错位脱落，重新对位安装后恢复转动。",
+    "category": "微波炉",
+    "brand": "松下",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-049",
+    "text": "美的 微波炉：微波炉门关上后机器不启动。门联锁开关触点氧化接触不良，更换联锁开关后正常启动。",
+    "category": "微波炉",
+    "brand": "美的",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 150,
+    "warranty": false
+  },
+  {
+    "id": "case-050",
+    "text": "海尔 微波炉：微波炉按键面板部分失灵，需大力按压才有反应。薄膜面板老化，更换同型号控制面板后按键灵敏。",
+    "category": "微波炉",
+    "brand": "海尔",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-051",
+    "text": "格兰仕 微波炉：微波炉工作时噪音异常大伴有震动。转盘电机齿轮磨损打滑，更换同步电机后运转平稳。",
+    "category": "微波炉",
+    "brand": "格兰仕",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 180,
+    "warranty": false
+  },
+  {
+    "id": "case-052",
+    "text": "美的 微波炉：微波炉通电后完全无反应，显示屏不亮。检查为内部电源保险管熔断，更换保险管后恢复正常。",
+    "category": "微波炉",
+    "brand": "美的",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-053",
+    "text": "LG 微波炉：微波炉加热缓慢，食物半天不热。磁控管输出功率衰减，更换磁控管后加热恢复正常速度。",
+    "category": "微波炉",
+    "brand": "LG",
+    "fault_code": "无",
+    "difficulty": "困难",
+    "cost": 280,
+    "warranty": false
+  },
+  {
+    "id": "case-054",
+    "text": "小米 电视：电视遥控器无法开机但使用机身按键正常。遥控器红外发射管损坏，更换遥控器后恢复正常。",
+    "category": "电视",
+    "brand": "小米",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-055",
+    "text": "TCL 电视：电视开机后背光亮但屏幕无图像。逻辑板排线松动氧化，重新插接并清洁触点后图像恢复。",
+    "category": "电视",
+    "brand": "TCL",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 320,
+    "warranty": false
+  },
+  {
+    "id": "case-056",
+    "text": "海信 电视：电视屏幕右下角出现大片暗区。背光灯条部分灯珠损坏，更换整条灯条后亮度均匀。",
+    "category": "电视",
+    "brand": "海信",
+    "fault_code": "无",
+    "difficulty": "困难",
+    "cost": 680,
+    "warranty": false
+  },
+  {
+    "id": "case-057",
+    "text": "创维 电视：电视有图像但完全无声音。音频功放芯片损坏，更换功放模块后声音恢复。",
+    "category": "电视",
+    "brand": "创维",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 260,
+    "warranty": false
+  },
+  {
+    "id": "case-058",
+    "text": "康佳 电视：电视开机后自动关机，反复重启。电源板滤波电容鼓包容量衰减，更换电容后运行稳定。",
+    "category": "电视",
+    "brand": "康佳",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 240,
+    "warranty": false
+  },
+  {
+    "id": "case-059",
+    "text": "长虹 电视：电视屏幕花屏并出现横向条纹。HDMI线接触不良，更换高质量HDMI线并重新插紧后正常。",
+    "category": "电视",
+    "brand": "长虹",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-060",
+    "text": "索尼 电视：电视黑屏但能听到声音。屏幕背光驱动板故障导致无背光，更换驱动板后图像恢复正常。",
+    "category": "电视",
+    "brand": "索尼",
+    "fault_code": "无",
+    "difficulty": "困难",
+    "cost": 750,
+    "warranty": false
+  },
+  {
+    "id": "case-061",
+    "text": "三星 电视：电视开机缓慢且菜单卡顿。系统缓存过多，恢复出厂设置并升级固件后操作流畅。",
+    "category": "电视",
+    "brand": "三星",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-062",
+    "text": "万和 热水器 E1：燃气热水器点火失败并报E1。点火针积碳导致放电微弱，清理点火针并调整间距后正常点火。",
+    "category": "热水器",
+    "brand": "万和",
+    "fault_code": "E1",
+    "difficulty": "中等",
+    "cost": 180,
+    "warranty": false
+  },
+  {
+    "id": "case-063",
+    "text": "林内 热水器：燃气热水器水温忽冷忽热。水流量传感器积垢导致信号不稳，清洗传感器后水温恒定。",
+    "category": "热水器",
+    "brand": "林内",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 260,
+    "warranty": false
+  },
+  {
+    "id": "case-064",
+    "text": "史密斯 热水器：电热水器加热指示灯亮但水不热。加热管表面结满水垢，更换加热管并清洗内胆后恢复加热。",
+    "category": "热水器",
+    "brand": "史密斯",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 320,
+    "warranty": false
+  },
+  {
+    "id": "case-065",
+    "text": "海尔 热水器：电热水器出水变小且带有白色颗粒。花洒和进水滤网被水垢堵塞，用柠檬酸浸泡清洗后出水量恢复。",
+    "category": "热水器",
+    "brand": "海尔",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-066",
+    "text": "万家乐 热水器 E5：燃气热水器风机运转但不着火。风压开关取样管脱落，重新接好取样管后风压检测正常。",
+    "category": "热水器",
+    "brand": "万家乐",
+    "fault_code": "E5",
+    "difficulty": "中等",
+    "cost": 220,
+    "warranty": false
+  },
+  {
+    "id": "case-067",
+    "text": "能率 热水器：燃气热水器漏水，底部有渗水痕迹。水箱盘管冻裂，更换水箱总成后不再渗漏。",
+    "category": "热水器",
+    "brand": "能率",
+    "fault_code": "无",
+    "difficulty": "困难",
+    "cost": 420,
+    "warranty": false
+  },
+  {
+    "id": "case-068",
+    "text": "阿里斯顿 热水器：电热水器漏电保护插头频繁跳闸。加热管绝缘下降导致漏电，更换加热管并检测绝缘后正常。",
+    "category": "热水器",
+    "brand": "阿里斯顿",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 280,
+    "warranty": false
+  },
+  {
+    "id": "case-069",
+    "text": "美的 热水器：热水器显示屏报缺水但水箱有水。水位探针表面结垢导致误判，拆下清洗探针后报警消除。",
+    "category": "热水器",
+    "brand": "美的",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-070",
+    "text": "美的 电饭煲 E3：电饭煲煮饭夹生。内胆底部变形与发热盘接触不良，更换内胆后受热均匀煮饭正常。",
+    "category": "电饭煲",
+    "brand": "美的",
+    "fault_code": "E3",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-071",
+    "text": "苏泊尔 电饭煲：电饭煲不加热，指示灯正常。温度保险丝熔断，更换同规格保险丝后恢复加热。",
+    "category": "电饭煲",
+    "brand": "苏泊尔",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 140,
+    "warranty": false
+  },
+  {
+    "id": "case-072",
+    "text": "九阳 电磁炉 E0：电磁炉显示E0不检锅。锅具材质不符或底部不平，更换铁质平底锅后正常加热。",
+    "category": "电磁炉",
+    "brand": "九阳",
+    "fault_code": "E0",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-073",
+    "text": "美的 电磁炉：电磁炉开机后风扇不转并自动保护。散热风扇卡死，清理杂物并加注润滑油后恢复转动。",
+    "category": "电磁炉",
+    "brand": "美的",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 180,
+    "warranty": false
+  },
+  {
+    "id": "case-074",
+    "text": "九阳 电水壶：电水壶水开后不断电一直沸腾。蒸汽感温片变形失效，更换温控器后水开自动断电。",
+    "category": "电水壶",
+    "brand": "九阳",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-075",
+    "text": "九阳 豆浆机：豆浆机电机转动但不出浆。滤网被豆渣堵死，拆洗滤网和刀头后出浆顺畅。",
+    "category": "豆浆机",
+    "brand": "九阳",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 160,
+    "warranty": false
+  },
+  {
+    "id": "case-076",
+    "text": "老板 抽油烟机：抽油烟机吸烟效果明显下降。风轮积满油垢导致转速下降，拆下风轮清洗后吸力恢复。",
+    "category": "抽油烟机",
+    "brand": "老板",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 200,
+    "warranty": false
+  },
+  {
+    "id": "case-077",
+    "text": "方太 抽油烟机：抽油烟机机身渗油滴到灶台。油杯已满且油路堵塞，清理油杯和导油槽后不再滴油。",
+    "category": "抽油烟机",
+    "brand": "方太",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-078",
+    "text": "华帝 抽油烟机：抽油烟机噪音大并伴随机身震动。风轮油垢堆积导致动平衡失效，清洗风轮后震动消除。",
+    "category": "抽油烟机",
+    "brand": "华帝",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 240,
+    "warranty": false
+  },
+  {
+    "id": "case-079",
+    "text": "华帝 燃气灶：燃气灶打不着火但能闻到燃气味。火盖出火孔被汤汁堵塞，用细针疏通火孔后正常点火。",
+    "category": "燃气灶",
+    "brand": "华帝",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-080",
+    "text": "老板 燃气灶：燃气灶火焰发黄且锅底发黑。风门开度不当导致燃烧不充分，调节风门使火焰呈蓝色后正常。",
+    "category": "燃气灶",
+    "brand": "老板",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 150,
+    "warranty": false
+  },
+  {
+    "id": "case-081",
+    "text": "海尔 冰箱 E3：冰箱冷冻室温度正常但冷藏室偏暖，出风口几乎没风。检查发现蒸发器风扇电机停转，更换风扇电机后冷气循环恢复。",
+    "category": "冰箱",
+    "brand": "海尔",
+    "fault_code": "E3",
+    "difficulty": "中等",
+    "cost": 300,
+    "warranty": false
+  },
+  {
+    "id": "case-082",
+    "text": "美的 冰箱：冰箱两侧温度很高、摸上去烫手。原因是冰箱离墙太近散热不畅，把冰箱外移十厘米并清理背部灰尘后恢复正常。",
+    "category": "冰箱",
+    "brand": "美的",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-083",
+    "text": "西门子 冰箱：对开门冰箱制冰机不出冰，只听到电机空转声。拆开发现出冰口被碎冰堵死结块，清理通道并更换破损的密封条后正常。",
+    "category": "冰箱",
+    "brand": "西门子",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 260,
+    "warranty": false
+  },
+  {
+    "id": "case-084",
+    "text": "松下 冰箱：冰箱冷藏室抽屉结冰，蔬菜冻坏。原因是把热的食物直接放进冷藏室，热气遇冷凝华成冰，等食物冷却后再放并调高温度档位即可。",
+    "category": "冰箱",
+    "brand": "松下",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-085",
+    "text": "容声 冰箱 E4：冰箱显示化霜故障代码，冷冻室结霜严重。化霜加热丝开路，更换加热丝和化霜温控器后化霜恢复正常。",
+    "category": "冰箱",
+    "brand": "容声",
+    "fault_code": "E4",
+    "difficulty": "中等",
+    "cost": 340,
+    "warranty": false
+  },
+  {
+    "id": "case-086",
+    "text": "博世 冰箱：冰箱运行中频繁启停，每次只运行一两分钟。门封条漏气导致箱内温度回升快，更换门封条后启停周期恢复正常。",
+    "category": "冰箱",
+    "brand": "博世",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 280,
+    "warranty": false
+  },
+  {
+    "id": "case-087",
+    "text": "海信 冰箱：冰箱压缩机舱内有黑色油污渗出。压缩机接线柱密封圈老化，属于早期渗漏，更换密封圈并清理油污后未再出现。",
+    "category": "冰箱",
+    "brand": "海信",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-088",
+    "text": "LG 冰箱 E5：冰箱冷冻室不制冷但压缩机很热。检查冷凝器温度过高，散热风机不转，更换冷凝风机后制冷恢复。",
+    "category": "冰箱",
+    "brand": "LG",
+    "fault_code": "E5",
+    "difficulty": "中等",
+    "cost": 420,
+    "warranty": false
+  },
+  {
+    "id": "case-089",
+    "text": "美菱 冰箱：风冷冰箱冷藏室和冷冻室都不冷，压缩机有轻微震动但不降温。判断压缩机阀片损坏无法建立压差，更换压缩机后正常。",
+    "category": "冰箱",
+    "brand": "美菱",
+    "fault_code": "无",
+    "difficulty": "困难",
+    "cost": 480,
+    "warranty": false
+  },
+  {
+    "id": "case-090",
+    "text": "三星 冰箱：冰箱门开关时听到咔哒异响。门铰链缺少润滑且螺丝松动，加注润滑脂并紧固铰链后异响消失。",
+    "category": "冰箱",
+    "brand": "三星",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-091",
+    "text": "夏普 冰箱：冰箱蔬果室保湿效果变差，蔬菜很快蔫掉。保湿盖板卡扣断裂导致密封不严，更换盖板后恢复。",
+    "category": "冰箱",
+    "brand": "夏普",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 220,
+    "warranty": false
+  },
+  {
+    "id": "case-092",
+    "text": "东芝 冰箱 E6：冰箱变频压缩机转速异常，制冷忽强忽弱。变频驱动板电容老化，更换驱动板后压缩机转速稳定。",
+    "category": "冰箱",
+    "brand": "东芝",
+    "fault_code": "E6",
+    "difficulty": "中等",
+    "cost": 380,
+    "warranty": false
+  },
+  {
+    "id": "case-093",
+    "text": "海尔 洗衣机 E6：滚筒洗衣机显示电机故障代码，桶不转。检查电机碳刷磨损且整流子积碳，更换碳刷并清洁整流子后恢复正常。",
+    "category": "洗衣机",
+    "brand": "海尔",
+    "fault_code": "E6",
+    "difficulty": "中等",
+    "cost": 260,
+    "warranty": false
+  },
+  {
+    "id": "case-094",
+    "text": "小天鹅 洗衣机：波轮洗衣机脱水时发出周期性咚咚声。内桶与外桶之间卡入了一枚硬币，拆下波轮取出异物后异响消失。",
+    "category": "洗衣机",
+    "brand": "小天鹅",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-095",
+    "text": "美的 洗衣机：洗衣机洗完衣服上有黑色油渍。减速器油封破损导致润滑油渗入内桶，更换减速器总成后消除。",
+    "category": "洗衣机",
+    "brand": "美的",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 240,
+    "warranty": false
+  },
+  {
+    "id": "case-096",
+    "text": "LG 洗衣机：滚筒洗衣机橡胶门封圈发霉发黑并散发异味。拆下门封圈清洗霉斑，用专用清洁剂处理后重新安装，建议每次洗完擦干并留门通风。",
+    "category": "洗衣机",
+    "brand": "LG",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 200,
+    "warranty": false
+  },
+  {
+    "id": "case-097",
+    "text": "西门子 洗衣机 F1：洗衣机进水后立即报进水异常。进水阀滤网被水垢堵死导致流量过小，清洗滤网后进水恢复正常。",
+    "category": "洗衣机",
+    "brand": "西门子",
+    "fault_code": "F1",
+    "difficulty": "中等",
+    "cost": 300,
+    "warranty": false
+  },
+  {
+    "id": "case-098",
+    "text": "松下 洗衣机：洗衣机程序卡住不往下走，指示灯闪烁。断电重启后恢复正常，原因是电压波动导致主板死机，建议加装稳压器。",
+    "category": "洗衣机",
+    "brand": "松下",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-099",
+    "text": "荣事达 洗衣机：洗衣机波轮转动无力，洗不干净衣服。皮带打滑且张力不足，更换传动皮带并调整张紧轮后洗涤力恢复。",
+    "category": "洗衣机",
+    "brand": "荣事达",
+    "fault_code": "无",
+    "difficulty": "困难",
+    "cost": 360,
+    "warranty": false
+  },
+  {
+    "id": "case-100",
+    "text": "海尔 洗衣机 E7：滚筒洗衣机加热洗程序不加热。加热管阻值无穷大已开路，更换加热管后加热功能恢复。",
+    "category": "洗衣机",
+    "brand": "海尔",
+    "fault_code": "E7",
+    "difficulty": "中等",
+    "cost": 280,
+    "warranty": false
+  },
+  {
+    "id": "case-101",
+    "text": "TCL 洗衣机：洗衣机进水软管接头处滴水。管接头内密封垫老化变形，更换密封垫并重新拧紧后不再渗漏。",
+    "category": "洗衣机",
+    "brand": "TCL",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 90,
+    "warranty": true
+  },
+  {
+    "id": "case-102",
+    "text": "海信 洗衣机：洗衣机排水缓慢，排水泵有异响。排水泵叶轮被线头缠住，拆开清理叶轮后排水恢复顺畅。",
+    "category": "洗衣机",
+    "brand": "海信",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 220,
+    "warranty": false
+  },
+  {
+    "id": "case-103",
+    "text": "三洋 洗衣机：洗衣机外桶晃动幅度大，机身跟着移动。运输固定螺栓没有拆除，拆掉后侧四个运输螺栓后抖动消失。",
+    "category": "洗衣机",
+    "brand": "三洋",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-104",
+    "text": "卡萨帝 洗衣机：洗衣机自动投放洗衣液功能失效，每次都投得过多。投放泵管路结晶堵塞，清洗管路并校准投放量后正常。",
+    "category": "洗衣机",
+    "brand": "卡萨帝",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 340,
+    "warranty": false
+  },
+  {
+    "id": "case-105",
+    "text": "格力 空调 F2：空调室内机显示过滤网报警并降低制冷量。滤网积尘过厚触发风量保护，清洗滤网后报警解除。",
+    "category": "空调",
+    "brand": "格力",
+    "fault_code": "F2",
+    "difficulty": "中等",
+    "cost": 320,
+    "warranty": false
+  },
+  {
+    "id": "case-106",
+    "text": "美的 空调：空调室外机结霜严重，制热效果差。化霜传感器位置偏移导致化霜不及时，重新固定传感器后化霜周期恢复正常。",
+    "category": "空调",
+    "brand": "美的",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 280,
+    "warranty": false
+  },
+  {
+    "id": "case-107",
+    "text": "海尔 空调：空调遥控器显示正常但机器无反应。遥控器设置在送风模式，切换到制冷模式后压缩机正常启动。",
+    "category": "空调",
+    "brand": "海尔",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-108",
+    "text": "奥克斯 空调：空调开机后室内机有流水声但不出风。贯流风轮卡死无法转动，清理风轮周围的异物后恢复正常。",
+    "category": "空调",
+    "brand": "奥克斯",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 260,
+    "warranty": false
+  },
+  {
+    "id": "case-109",
+    "text": "海信 空调：空调压缩机启动瞬间跳闸。测量压缩机对地绝缘为零，判断绕组烧毁，更换压缩机并清洗系统后正常。",
+    "category": "空调",
+    "brand": "海信",
+    "fault_code": "无",
+    "difficulty": "困难",
+    "cost": 560,
+    "warranty": false
+  },
+  {
+    "id": "case-110",
+    "text": "志高 空调 E3：空调显示室内机温度传感器故障。传感器线束被老鼠咬断，重新接线并做好绝缘后报警消除。",
+    "category": "空调",
+    "brand": "志高",
+    "fault_code": "E3",
+    "difficulty": "中等",
+    "cost": 240,
+    "warranty": false
+  },
+  {
+    "id": "case-111",
+    "text": "大金 空调：空调制冷时室内机导风板滴水。导风板温度过低凝露，调高风速并适当提高设定温度后不再滴水。",
+    "category": "空调",
+    "brand": "大金",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-112",
+    "text": "科龙 空调：空调加装延长管后噪音明显增大。管路固定卡扣间距过大产生共振，加密固定卡扣并加装减震垫后噪音降低。",
+    "category": "空调",
+    "brand": "科龙",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 300,
+    "warranty": false
+  },
+  {
+    "id": "case-113",
+    "text": "格兰仕 空调：空调室内机出风有酸臭味，清洗滤网后仍有。接水盘长期积水滋生细菌，拆下接水盘清洗消毒后异味消除。",
+    "category": "空调",
+    "brand": "格兰仕",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 220,
+    "warranty": false
+  },
+  {
+    "id": "case-114",
+    "text": "松下 空调：空调外机压缩机频繁保护停机。检查发现系统内有杂质导致毛细管脏堵，吹洗系统并更换干燥过滤器后恢复正常。",
+    "category": "空调",
+    "brand": "松下",
+    "fault_code": "无",
+    "difficulty": "困难",
+    "cost": 620,
+    "warranty": false
+  },
+  {
+    "id": "case-115",
+    "text": "TCL 空调：空调显示板背光不亮但功能正常。背光板老化，不影响使用，如需要更换显示板总成。",
+    "category": "空调",
+    "brand": "TCL",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-116",
+    "text": "富士通 空调：空调制热时室外机噪音大且有震动。外机风扇叶片被冰包裹不平衡，除冰并检查排水通畅后噪音消失。",
+    "category": "空调",
+    "brand": "富士通",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 280,
+    "warranty": false
+  },
+  {
+    "id": "case-117",
+    "text": "美的 微波炉：微波炉加热时声音比平时闷。高压二极管性能劣化，更换高压二极管后声音和加热都恢复正常。",
+    "category": "微波炉",
+    "brand": "美的",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 160,
+    "warranty": false
+  },
+  {
+    "id": "case-118",
+    "text": "格兰仕 微波炉：微波炉显示屏亮度变暗，数字模糊。显示屏驱动电路老化，可继续使用，介意的话更换显示板。",
+    "category": "微波炉",
+    "brand": "格兰仕",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-119",
+    "text": "松下 微波炉：微波炉加热时外壳发热明显。波导盖破损导致微波外泄，更换波导盖并检查门封后正常，提醒用户不要空载运行。",
+    "category": "微波炉",
+    "brand": "松下",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 200,
+    "warranty": false
+  },
+  {
+    "id": "case-120",
+    "text": "海尔 微波炉：微波炉转盘玻璃碎裂。更换同规格转盘并检查转盘支架是否变形，变形需一并更换。",
+    "category": "微波炉",
+    "brand": "海尔",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 60,
+    "warranty": true
+  },
+  {
+    "id": "case-121",
+    "text": "美的 微波炉 E1：微波炉开机后立即报E1不工作。检查为温度传感器开路，更换传感器后恢复加热。",
+    "category": "微波炉",
+    "brand": "美的",
+    "fault_code": "E1",
+    "difficulty": "中等",
+    "cost": 240,
+    "warranty": false
+  },
+  {
+    "id": "case-122",
+    "text": "LG 微波炉：微波炉门关不严，有缝隙且加热效率低。门钩变形导致无法压紧联锁开关，更换门钩后门体闭合到位。",
+    "category": "微波炉",
+    "brand": "LG",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 180,
+    "warranty": false
+  },
+  {
+    "id": "case-123",
+    "text": "三星 微波炉：微波炉完全不加热且灯也不亮。检查发现变压器初级绕组开路，更换高压变压器后恢复正常。",
+    "category": "微波炉",
+    "brand": "三星",
+    "fault_code": "无",
+    "difficulty": "困难",
+    "cost": 320,
+    "warranty": false
+  },
+  {
+    "id": "case-124",
+    "text": "格兰仕 微波炉：微波炉内腔有焦糊味但未打火。上次加热食物溅出的油污碳化，彻底清洁内腔和云母片后异味消除。",
+    "category": "微波炉",
+    "brand": "格兰仕",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-125",
+    "text": "海信 电视：电视开机后画面出现竖条纹。屏幕排线在接口处氧化，拆开后盖清洁并重新压接排线后条纹消失。",
+    "category": "电视",
+    "brand": "海信",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 280,
+    "warranty": false
+  },
+  {
+    "id": "case-126",
+    "text": "TCL 电视：电视无法连接WiFi。路由器开启了MAC过滤，把电视MAC加入白名单后正常连接。",
+    "category": "电视",
+    "brand": "TCL",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-127",
+    "text": "小米 电视：电视开机后卡在品牌logo反复重启。系统分区损坏，通过U盘刷入官方固件后恢复。",
+    "category": "电视",
+    "brand": "小米",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 240,
+    "warranty": false
+  },
+  {
+    "id": "case-128",
+    "text": "创维 电视：电视背光不亮但用手电照能看到画面。背光驱动输出的电源板故障，更换电源板后背光恢复。",
+    "category": "电视",
+    "brand": "创维",
+    "fault_code": "无",
+    "difficulty": "困难",
+    "cost": 700,
+    "warranty": false
+  },
+  {
+    "id": "case-129",
+    "text": "长虹 电视：电视声音忽大忽小并伴随杂音。扬声器音圈引线氧化接触不良，更换扬声器后声音正常。",
+    "category": "电视",
+    "brand": "长虹",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 260,
+    "warranty": false
+  },
+  {
+    "id": "case-130",
+    "text": "康佳 电视：电视遥控器部分按键失灵。按键导电胶磨损，用酒精擦拭导电胶和触点后大部分按键恢复，严重需换遥控器。",
+    "category": "电视",
+    "brand": "康佳",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-131",
+    "text": "三星 电视：电视开机后屏幕左下角有暗斑。判断为局部背光灯珠老化，更换那一组灯条后亮度均匀。",
+    "category": "电视",
+    "brand": "三星",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 300,
+    "warranty": false
+  },
+  {
+    "id": "case-132",
+    "text": "索尼 电视：电视待机指示灯亮但按遥控无法开机。遥控器与电视红外码错乱，重新对码后恢复正常。",
+    "category": "电视",
+    "brand": "索尼",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-133",
+    "text": "万和 热水器 E2：燃气热水器报E2熄火保护。火焰探针积碳导致检测不到火焰，清理探针并调整位置后正常点火燃烧。",
+    "category": "热水器",
+    "brand": "万和",
+    "fault_code": "E2",
+    "difficulty": "中等",
+    "cost": 200,
+    "warranty": false
+  },
+  {
+    "id": "case-134",
+    "text": "林内 热水器：燃气热水器出热水前要先放很久冷水。水流量传感器启动阈值偏高，清洗传感器并调整启动流量后出热水变快。",
+    "category": "热水器",
+    "brand": "林内",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 280,
+    "warranty": false
+  },
+  {
+    "id": "case-135",
+    "text": "史密斯 热水器：电热水器加热时有明显咕噜声。内胆底部水垢过厚导致局部沸腾，清洗内胆并更换镁棒后噪音消失。",
+    "category": "热水器",
+    "brand": "史密斯",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 360,
+    "warranty": false
+  },
+  {
+    "id": "case-136",
+    "text": "海尔 热水器 E4：电热水器报内胆超温保护。温控器失效导致持续加热，更换温控器和限温器后恢复正常。",
+    "category": "热水器",
+    "brand": "海尔",
+    "fault_code": "E4",
+    "difficulty": "中等",
+    "cost": 240,
+    "warranty": false
+  },
+  {
+    "id": "case-137",
+    "text": "万家乐 热水器：燃气热水器打火时有很浓的燃气味但点不着。燃气阀门开度过小，开大阀门并检查软管是否折压后正常点火。",
+    "category": "热水器",
+    "brand": "万家乐",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-138",
+    "text": "阿里斯顿 热水器：电热水器出水量比新买时小很多。进水口滤网和花洒均被水垢堵塞，用柠檬酸浸泡清洗后出水量恢复。",
+    "category": "热水器",
+    "brand": "阿里斯顿",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 300,
+    "warranty": false
+  },
+  {
+    "id": "case-139",
+    "text": "能率 热水器：燃气热水器风机噪音大且转速不稳。风机轴承磨损，更换风机总成后噪音和转速恢复正常。",
+    "category": "热水器",
+    "brand": "能率",
+    "fault_code": "无",
+    "difficulty": "困难",
+    "cost": 480,
+    "warranty": false
+  },
+  {
+    "id": "case-140",
+    "text": "华帝 热水器：热水器排烟管漏烟，室内有异味。排烟管接口密封圈老化，重新密封接口并加固固定卡箍后不再漏烟。",
+    "category": "热水器",
+    "brand": "华帝",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-141",
+    "text": "老板 抽油烟机：抽油烟机按键自动跳变，自己开关机。面板受潮导致按键漏电，拆开烘干并做防水处理后正常。",
+    "category": "抽油烟机",
+    "brand": "老板",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 240,
+    "warranty": false
+  },
+  {
+    "id": "case-142",
+    "text": "方太 抽油烟机：抽油烟机照明灯不亮，风扇正常。灯泡烧毁，更换同规格灯泡后照明恢复。",
+    "category": "抽油烟机",
+    "brand": "方太",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-143",
+    "text": "华帝 抽油烟机：抽油烟机吸力正常但机身抖动厉害。风轮固定螺母松动导致动平衡失效，紧固螺母并校准风轮后抖动消除。",
+    "category": "抽油烟机",
+    "brand": "华帝",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 280,
+    "warranty": false
+  },
+  {
+    "id": "case-144",
+    "text": "美的 抽油烟机：抽油烟机止回阀有异响，风大时有拍打声。止回阀叶片积油粘连，清洗叶片并加装防风帽后异响消失。",
+    "category": "抽油烟机",
+    "brand": "美的",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-145",
+    "text": "帅康 抽油烟机：顶吸式油烟机吸不到锅边油烟。安装高度过高，按说明书调整到距灶台六十五厘米后吸烟效果明显改善。",
+    "category": "抽油烟机",
+    "brand": "帅康",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 220,
+    "warranty": false
+  },
+  {
+    "id": "case-146",
+    "text": "海尔 抽油烟机：侧吸油烟机自动清洗功能不工作。清洗水泵堵塞，疏通水泵管路后自动清洗恢复正常。",
+    "category": "抽油烟机",
+    "brand": "海尔",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 260,
+    "warranty": false
+  },
+  {
+    "id": "case-147",
+    "text": "西门子 抽油烟机：抽油烟机运行时有金属摩擦声。机身内部螺钉松动与外壳共振，紧固所有固定螺钉后声音消失。",
+    "category": "抽油烟机",
+    "brand": "西门子",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-148",
+    "text": "德意 抽油烟机：抽油烟机排烟不畅，厨房还有油烟味。公共烟道压力大且未装止逆阀，加装电动止逆阀后排烟顺畅。",
+    "category": "抽油烟机",
+    "brand": "德意",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 200,
+    "warranty": false
+  },
+  {
+    "id": "case-149",
+    "text": "老板 燃气灶：燃气灶一边炉头打不着火，另一边正常。分火器出火孔被汤汁堵住，拆下分火器疏通火孔后正常点火。",
+    "category": "燃气灶",
+    "brand": "老板",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 180,
+    "warranty": false
+  },
+  {
+    "id": "case-150",
+    "text": "方太 燃气灶：燃气灶点火针上有火花但点不着。点火针位置偏移离火孔太远，调整间隙到四毫米后正常点燃。",
+    "category": "燃气灶",
+    "brand": "方太",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-151",
+    "text": "华帝 燃气灶：燃气灶火力比另一边明显小。喷嘴被细小杂质部分堵塞，用细针清理喷嘴孔后火力恢复正常。",
+    "category": "燃气灶",
+    "brand": "华帝",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 220,
+    "warranty": false
+  },
+  {
+    "id": "case-152",
+    "text": "美的 燃气灶：燃气灶松手就熄火。热电偶老化产生的电动势不足，更换热电偶后松手可持续燃烧。",
+    "category": "燃气灶",
+    "brand": "美的",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 200,
+    "warranty": false
+  },
+  {
+    "id": "case-153",
+    "text": "西门子 燃气灶：燃气灶旋钮转动费力发卡。阀芯缺润滑，拆下旋钮加注专用润滑脂后转动顺畅。",
+    "category": "燃气灶",
+    "brand": "西门子",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-154",
+    "text": "万家乐 燃气灶：燃气灶使用时闻到燃气味。旋塞阀密封圈老化漏气，更换阀芯密封圈并做气密性检测后不再漏气。",
+    "category": "燃气灶",
+    "brand": "万家乐",
+    "fault_code": "无",
+    "difficulty": "困难",
+    "cost": 320,
+    "warranty": false
+  },
+  {
+    "id": "case-155",
+    "text": "樱雪 燃气灶：燃气灶表面玻璃面板被重物砸出裂纹。停止使用并更换面板，提醒避免在灶面放置重物。",
+    "category": "燃气灶",
+    "brand": "樱雪",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-156",
+    "text": "帅康 燃气灶：燃气灶两个炉头同时打火但只有一边着火。脉冲点火器输出分路故障，更换点火器后两边都正常。",
+    "category": "燃气灶",
+    "brand": "帅康",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 240,
+    "warranty": false
+  },
+  {
+    "id": "case-157",
+    "text": "美的 电饭煲 E2：电饭煲显示E2不工作。上盖温度传感器开路，更换传感器后恢复正常煮饭。",
+    "category": "电饭煲",
+    "brand": "美的",
+    "fault_code": "E2",
+    "difficulty": "中等",
+    "cost": 180,
+    "warranty": false
+  },
+  {
+    "id": "case-158",
+    "text": "苏泊尔 电饭煲：电饭煲煮饭时间比以前长很多。内胆涂层磨损导致导热变差，更换内胆后煮饭时间恢复正常。",
+    "category": "电饭煲",
+    "brand": "苏泊尔",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-159",
+    "text": "九阳 电饭煲：电饭煲预约功能失效，到点不开始。控制板时钟芯片掉电，更换主板后预约功能恢复。",
+    "category": "电饭煲",
+    "brand": "九阳",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 160,
+    "warranty": false
+  },
+  {
+    "id": "case-160",
+    "text": "松下 电饭煲：电饭煲开盖时蒸汽阀滴水。蒸汽阀密封圈老化，更换密封圈后不再滴水。",
+    "category": "电饭煲",
+    "brand": "松下",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-161",
+    "text": "象印 电饭煲：电饭煲煮出来的饭底部发黄发硬。加热盘表面变形导致接触不均，更换加热盘后受热均匀。",
+    "category": "电饭煲",
+    "brand": "象印",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 200,
+    "warranty": false
+  },
+  {
+    "id": "case-162",
+    "text": "小米 电饭煲：电饭煲WiFi连接不上App。固件版本过旧，升级到最新固件后连接正常。",
+    "category": "电饭煲",
+    "brand": "小米",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-163",
+    "text": "格兰仕 电饭煲：电饭煲保温功能失效，饭很快就凉。保温加热片断路，更换保温片后保温功能恢复。",
+    "category": "电饭煲",
+    "brand": "格兰仕",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 190,
+    "warranty": false
+  },
+  {
+    "id": "case-164",
+    "text": "美的 电磁炉 E1：电磁炉显示E1不加热。未放锅具或锅具不符，放上铁质平底锅后正常工作。",
+    "category": "电磁炉",
+    "brand": "美的",
+    "fault_code": "E1",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-165",
+    "text": "九阳 电磁炉：电磁炉开机加热几秒后自动停机。散热风扇转速不足触发过热保护，清理风扇积尘并加注润滑油后正常。",
+    "category": "电磁炉",
+    "brand": "九阳",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 200,
+    "warranty": false
+  },
+  {
+    "id": "case-166",
+    "text": "苏泊尔 电磁炉：电磁炉按键接触不良，需要用力按。按键膜老化，更换按键面板后操作灵敏。",
+    "category": "电磁炉",
+    "brand": "苏泊尔",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 180,
+    "warranty": false
+  },
+  {
+    "id": "case-167",
+    "text": "奔腾 电磁炉：电磁炉功率调不上去，只能小功率加热。锅底直径小于加热区最小要求，换用合适尺寸的锅具后功率正常。",
+    "category": "电磁炉",
+    "brand": "奔腾",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-168",
+    "text": "尚朋堂 电磁炉：电磁炉使用时有电流声且指示灯闪烁。内部滤波电容容量下降，更换电容后工作稳定。",
+    "category": "电磁炉",
+    "brand": "尚朋堂",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 220,
+    "warranty": false
+  },
+  {
+    "id": "case-169",
+    "text": "格力 电磁炉：电磁炉完全不启动，显示屏无反应。IGBT功率管击穿短路，更换功率管及驱动电路后恢复。",
+    "category": "电磁炉",
+    "brand": "格力",
+    "fault_code": "无",
+    "difficulty": "困难",
+    "cost": 280,
+    "warranty": false
+  },
+  {
+    "id": "case-170",
+    "text": "美的 电水壶：电水壶通电后指示灯亮但不加热。发热管接头氧化接触不良，打磨接头并重新紧固后恢复加热。",
+    "category": "电水壶",
+    "brand": "美的",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-171",
+    "text": "苏泊尔 电水壶：电水壶壶盖卡扣断裂，倒水时壶盖掉落。更换壶盖组件，提醒倒水时按压壶盖。",
+    "category": "电水壶",
+    "brand": "苏泊尔",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-172",
+    "text": "九阳 电水壶：电水壶加热时壶身底部渗水。发热管密封胶圈老化，更换胶圈并做密封处理后可正常使用。",
+    "category": "电水壶",
+    "brand": "九阳",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 120,
+    "warranty": false
+  },
+  {
+    "id": "case-173",
+    "text": "小熊 电水壶：电水壶底座接触不良，要转几下才通电。底座铜环氧化，用砂纸打磨触点后接触良好。",
+    "category": "电水壶",
+    "brand": "小熊",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-174",
+    "text": "荣事达 电水壶：电水壶烧水有明显塑料味。壶内有出厂残留，用白醋加水煮开后清洗两遍异味消除。",
+    "category": "电水壶",
+    "brand": "荣事达",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-175",
+    "text": "九阳 豆浆机：豆浆机打浆时震动剧烈并移位。机头与杯体卡扣未卡紧，重新卡紧并按说明书控制加水量后震动减小。",
+    "category": "豆浆机",
+    "brand": "九阳",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 180,
+    "warranty": false
+  },
+  {
+    "id": "case-176",
+    "text": "美的 豆浆机：豆浆机加热正常但刀片不转。电机过热保护未复位，冷却半小时后重新启动恢复正常。",
+    "category": "豆浆机",
+    "brand": "美的",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-177",
+    "text": "苏泊尔 豆浆机：豆浆机做出的豆浆有糊味。加热管表面结垢导致局部过热，用除垢剂清洗加热管后糊味消除。",
+    "category": "豆浆机",
+    "brand": "苏泊尔",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 160,
+    "warranty": false
+  },
+  {
+    "id": "case-178",
+    "text": "九阳 破壁机：破壁机打干粉时噪音特别大。属于正常现象，建议分批少量打并加装隔音罩。",
+    "category": "破壁机",
+    "brand": "九阳",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-179",
+    "text": "美的 破壁机：破壁机杯体底座漏水。杯体底部密封圈老化，更换密封圈后不再渗漏。",
+    "category": "破壁机",
+    "brand": "美的",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 200,
+    "warranty": false
+  },
+  {
+    "id": "case-180",
+    "text": "美的 烤箱：烤箱上下管加热不均匀，烤出的食物一边焦一边生。上加热管部分断路，更换加热管后受热均匀。",
+    "category": "烤箱",
+    "brand": "美的",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 240,
+    "warranty": false
+  },
+  {
+    "id": "case-181",
+    "text": "西门子 洗碗机 E15：洗碗机报E15进水异常。底部漏水保护启动，检查发现门封条老化渗水，更换门封条后报警消除。",
+    "category": "洗碗机",
+    "brand": "西门子",
+    "fault_code": "E15",
+    "difficulty": "中等",
+    "cost": 320,
+    "warranty": false
+  },
+  {
+    "id": "case-182",
+    "text": "美的 洗碗机：洗碗机洗完后餐具上仍有水珠。未开启加强烘干，选择带烘干的程序或添加漂洗剂后改善。",
+    "category": "洗碗机",
+    "brand": "美的",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-183",
+    "text": "方太 洗碗机：洗碗机不排水，内腔积水。排水泵被食物残渣堵塞，拆下过滤器和排水泵清理后排水恢复。",
+    "category": "洗碗机",
+    "brand": "方太",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 280,
+    "warranty": false
+  },
+  {
+    "id": "case-184",
+    "text": "海尔 洗碗机：洗碗机内壁有白色水垢。水质偏硬且未加软水盐，加入专用软水盐并调高软化档位后改善。",
+    "category": "洗碗机",
+    "brand": "海尔",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-185",
+    "text": "松下 洗碗机：洗碗机洗涤臂不转，洗不干净。喷淋臂出水孔被饭粒堵住，拆下喷淋臂疏通出水孔后正常。",
+    "category": "洗碗机",
+    "brand": "松下",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 300,
+    "warranty": false
+  },
+  {
+    "id": "case-186",
+    "text": "博世 洗碗机：洗碗机门关不上，卡在中间位置。门铰链弹簧断裂，更换铰链后门体开合正常。",
+    "category": "洗碗机",
+    "brand": "博世",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 260,
+    "warranty": false
+  },
+  {
+    "id": "case-187",
+    "text": "老板 洗碗机：洗碗机运行噪音比平常大。餐具摆放不当碰到喷淋臂，重新按说明书摆放后噪音消失。",
+    "category": "洗碗机",
+    "brand": "老板",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-188",
+    "text": "海尔 烘干机：烘干机烘干效果差，衣服还是潮的。绒毛过滤网堵塞导致风道不畅，清理过滤网和冷凝器后烘干恢复。",
+    "category": "烘干机",
+    "brand": "海尔",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 380,
+    "warranty": false
+  },
+  {
+    "id": "case-189",
+    "text": "西门子 烘干机：热泵烘干机报水箱已满。冷凝水盒已装满未倒，倒空水盒后恢复正常运行。",
+    "category": "烘干机",
+    "brand": "西门子",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 340,
+    "warranty": false
+  },
+  {
+    "id": "case-190",
+    "text": "美的 烘干机：烘干机烘干后衣服有异味。滚筒内壁残留绒毛滋生细菌，用专用清洁剂空转清洗后异味消除。",
+    "category": "烘干机",
+    "brand": "美的",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-191",
+    "text": "小天鹅 烘干机：洗烘一体机烘干时震动大。运输螺栓未拆或机器未调平，拆除螺栓并调平底脚后震动减小。",
+    "category": "烘干机",
+    "brand": "小天鹅",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 320,
+    "warranty": false
+  },
+  {
+    "id": "case-192",
+    "text": "LG 烘干机：烘干机门打不开，程序结束后仍锁死。断电五分钟让门锁复位后正常打开。",
+    "category": "烘干机",
+    "brand": "LG",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-193",
+    "text": "戴森 吸尘器：吸尘器吸力明显下降。集尘桶已满且滤网堵塞，清空集尘桶并清洗滤网晾干后吸力恢复。",
+    "category": "吸尘器",
+    "brand": "戴森",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-194",
+    "text": "小米 吸尘器：扫地机器人原地打转不前进。驱动轮被毛发缠绕卡死，清理轮轴毛发后行走恢复正常。",
+    "category": "吸尘器",
+    "brand": "小米",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 260,
+    "warranty": false
+  },
+  {
+    "id": "case-195",
+    "text": "科沃斯 吸尘器：扫地机器人无法回充。充电座红外信号被遮挡，移开充电座前方的家具后正常回充。",
+    "category": "吸尘器",
+    "brand": "科沃斯",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 280,
+    "warranty": false
+  },
+  {
+    "id": "case-196",
+    "text": "莱克 吸尘器：吸尘器电池续航明显变短。锂电池组衰减严重，更换原厂电池组后续航恢复。",
+    "category": "吸尘器",
+    "brand": "莱克",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 220,
+    "warranty": false
+  },
+  {
+    "id": "case-197",
+    "text": "小米 净水器：净水器出水变小，TDS值升高。滤芯已到寿命，更换RO膜和前置滤芯后出水和水质恢复。",
+    "category": "净水器",
+    "brand": "小米",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  },
+  {
+    "id": "case-198",
+    "text": "美的 净水器：净水器制水时噪音大且震动。增压泵减震垫老化，更换减震垫后噪音明显降低。",
+    "category": "净水器",
+    "brand": "美的",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 300,
+    "warranty": false
+  },
+  {
+    "id": "case-199",
+    "text": "安吉尔 净水器：净水器机头下方渗水。滤瓶密封圈老化，更换密封圈并重新拧紧滤瓶后不再渗水。",
+    "category": "净水器",
+    "brand": "安吉尔",
+    "fault_code": "无",
+    "difficulty": "中等",
+    "cost": 260,
+    "warranty": false
+  },
+  {
+    "id": "case-200",
+    "text": "海尔 净水器：净水器长时间不用后出水有异味。滤芯内积水变质，放水冲洗十分钟并更换后置活性炭滤芯后恢复正常。",
+    "category": "净水器",
+    "brand": "海尔",
+    "fault_code": "无",
+    "difficulty": "简单",
+    "cost": 0,
+    "warranty": true
+  }
+]

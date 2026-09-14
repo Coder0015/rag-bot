@@ -1,0 +1,25 @@
+# --- Web ---
+fastapi~=0.103.0
+uvicorn                 # 运行服务必需；fastapi 只硬依赖 starlette/pydantic，不含它
+
+# --- 配置 ---
+python-dotenv           # config/settings.py 直接 import
+
+# --- 向量库与关键词检索 ---
+chromadb
+rank-bm25
+jieba
+
+# --- Embedding / 重排 ---
+# 注意：不要在这里显式写 torch。它由 sentence-transformers 带入，
+# 显式声明会在 pip install 时覆盖手动安装的 CUDA 版本（默认装的是 CPU 版）。
+sentence-transformers
+
+# --- LLM 接入 ---
+langchain~=1.3.18
+langchain-deepseek
+langchain-ollama        # 同时会带入 ollama 这个包
+
+# --- 文档处理 ---
+langchain_text_splitters~=1.1.2
+pypdf~=6.18.0

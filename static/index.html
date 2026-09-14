@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rag-bot 控制台</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --side: #f7f8fa;
+    --line: #e5e7eb;
+    --text: #1f2328;
+    --muted: #8b9198;
+    --accent: #2563eb;
+    --bot: #f59e0b;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0; display: flex;
+    font: 15px/1.7 -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+    color: var(--text); background: var(--bg);
+  }
+  button { font: inherit; cursor: pointer; }
+  button:disabled { cursor: not-allowed; opacity: .5; }
+
+  /* ---------- 侧边栏 ---------- */
+  .sidebar {
+    width: 296px; flex: none; background: var(--side);
+    border-right: 1px solid var(--line);
+    padding: 22px 20px 32px; overflow-y: auto;
+  }
+  .sidebar h1 { font-size: 17px; margin: 0 0 22px; }
+  .field { margin-bottom: 18px; }
+  .field > label {
+    display: block; font-size: 13px; color: var(--muted); margin-bottom: 6px;
+  }
+  select, input[type="text"] {
+    width: 100%; font: inherit; font-size: 14px;
+    padding: 9px 11px; border: 1px solid var(--line); border-radius: 8px;
+    background: #fff; color: var(--text);
+  }
+  select:focus, input:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+  .switch { display: flex; align-items: center; gap: 8px; font-size: 14px; }
+  .switch input { width: 16px; height: 16px; accent-color: var(--accent); }
+  .btns { display: flex; gap: 10px; margin: 22px 0; }
+  .btns button {
+    flex: 1; padding: 9px 0; font-size: 14px;
+    border: 1px solid var(--line); border-radius: 8px;
+    background: #fff; color: var(--text);
+  }
+  .btns button:hover { border-color: var(--accent); color: var(--accent); }
+  .sec {
+    margin-top: 26px; padding-top: 20px; border-top: 1px solid var(--line);
+  }
+  .sec h2 { font-size: 15px; margin: 0 0 12px; }
+  .empty { font-size: 13px; color: var(--muted); }
+  .hits { display: flex; flex-direction: column; gap: 9px; }
+  .hit {
+    background: #fff; border: 1px solid var(--line);
+    border-radius: 8px; padding: 9px 11px;
+    cursor: pointer;
+  }
+  .hit:hover { border-color: var(--accent); }
+  .hit::after {
+    content: "点开看全文"; display: block;
+    font-size: 11px; color: #b6bcc4; margin-top: 6px;
+  }
+  .hit:hover::after { color: var(--accent); }
+  .hit-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 8px; margin-bottom: 5px;
+  }
+  .hit-head b { font-size: 12px; }
+  .hit-head span { font-size: 11px; color: var(--muted); flex: none; }
+  .hit p {
+    margin: 0; font-size: 12px; line-height: 1.65; color: #5b6269;
+    display: -webkit-box; -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical; overflow: hidden;
+  }
+
+  /* ---------- 主区 ---------- */
+  .main { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+  .head { padding: 22px 32px 6px; font-size: 22px; font-weight: 600; }
+  .chat { flex: 1; overflow-y: auto; padding: 14px 32px 8px; }
+  .turn { max-width: 820px; margin: 0 auto 30px; }
+
+  .msg { display: flex; gap: 12px; margin-bottom: 18px; }
+  .msg.user { flex-direction: row-reverse; }
+  .avatar {
+    width: 34px; height: 34px; flex: none; border-radius: 9px;
+    display: grid; place-items: center;
+    font-size: 12px; font-weight: 700; color: #fff;
+  }
+  .msg.bot .avatar { background: var(--bot); }
+  .msg.user .avatar { background: var(--accent); }
+  .bubble { min-width: 0; max-width: 84%; }
+  .msg.user .bubble {
+    background: #eff3ff; border-radius: 12px; padding: 10px 15px;
+    white-space: pre-wrap; word-break: break-word;
+  }
+
+  .answer { white-space: pre-wrap; word-break: break-word; }
+  .bubble.pending .answer::after {
+    content: ""; display: inline-block; width: 7px; height: 15px;
+    vertical-align: -2px; background: var(--muted); animation: blink 1s steps(2) infinite;
+  }
+  @keyframes blink { 50% { opacity: 0; } }
+
+  .cite { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 14px; }
+  .cite span {
+    font-size: 12px; color: var(--muted);
+    border: 1px solid var(--line); border-radius: 999px; padding: 2px 11px;
+  }
+  .cite span b { color: var(--text); font-weight: 600; }
+
+  .think { margin-top: 12px; }
+  .think summary { font-size: 13px; color: var(--muted); cursor: pointer; user-select: none; }
+  .think summary:hover { color: var(--accent); }
+  .think .body {
+    margin-top: 9px; padding-left: 12px; border-left: 2px solid var(--line);
+    font-size: 13px; color: var(--muted); white-space: pre-wrap;
+    max-height: 220px; overflow: auto;
+  }
+  .err { color: #b91c1c; font-size: 14px; }
+
+  /* ---------- 详情弹层 ---------- */
+  .modal {
+    position: fixed; inset: 0; background: rgba(20, 24, 30, .42);
+    display: flex; align-items: center; justify-content: center;
+    padding: 24px; z-index: 50;
+  }
+  .modal-card {
+    background: #fff; border-radius: 12px; width: 100%; max-width: 680px;
+    max-height: 76vh; display: flex; flex-direction: column;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, .2);
+  }
+  .modal-head {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 12px; padding: 16px 20px; border-bottom: 1px solid var(--line);
+    font-size: 14px;
+  }
+  .modal-head b { font-weight: 600; }
+  .modal-head span { color: var(--muted); font-size: 12px; font-weight: 400; }
+  .modal-head button {
+    border: 0; background: transparent; font-size: 22px; line-height: 1;
+    color: var(--muted); padding: 0 4px;
+  }
+  .modal-head button:hover { color: var(--text); }
+  .modal-body {
+    padding: 18px 20px 22px; overflow-y: auto;
+    font-size: 14px; line-height: 1.85; white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  /* ---------- 底部 ---------- */
+  .composer { padding: 0 32px 22px; }
+  .composer-inner { max-width: 820px; margin: 0 auto; }
+  .examples {
+    display: flex; gap: 10px; margin-bottom: 12px;
+    overflow-x: auto; padding-bottom: 2px;
+  }
+  .examples button {
+    flex: none; font-size: 13px; color: #4b5259;
+    border: 1px solid var(--line); border-radius: 9px;
+    background: #fff; padding: 9px 16px; white-space: nowrap;
+  }
+  .examples button:hover { border-color: var(--accent); color: var(--accent); }
+  .examples em {
+    font-style: normal; font-size: 11px; color: var(--muted);
+    margin-right: 7px; padding-right: 7px; border-right: 1px solid var(--line);
+  }
+  .box {
+    display: flex; align-items: flex-end; gap: 10px;
+    border: 1px solid var(--line); border-radius: 12px;
+    padding: 10px 12px; background: #fff;
+  }
+  .box:focus-within { border-color: var(--accent); }
+  .box textarea {
+    flex: 1; font: inherit; border: 0; outline: 0; resize: none;
+    min-height: 24px; max-height: 140px; padding: 4px 0; background: transparent;
+  }
+  .box button {
+    width: 34px; height: 34px; flex: none; border: 0; border-radius: 9px;
+    background: var(--accent); color: #fff; font-size: 17px; line-height: 1;
+    display: grid; place-items: center;
+  }
+  @media (max-width: 720px) {
+    .sidebar { display: none; }
+    .head, .chat, .composer { padding-left: 16px; padding-right: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<aside class="sidebar">
+  <h1>控制台</h1>
+
+  <div class="field">
+    <label for="model">模型</label>
+    <select id="model"></select>
+  </div>
+
+  <div class="field">
+    <label for="collection">知识库</label>
+    <select id="collection"></select>
+  </div>
+
+  <div class="field">
+    <label>思考模式</label>
+    <label class="switch"><input type="checkbox" id="reasoning"> 开启（速度慢，答案更贴合资料）</label>
+  </div>
+
+  <div class="btns">
+    <button id="clear" title="清空对话、检索结果和输入框，回到初始状态">清空</button>
+  </div>
+
+  <div class="sec">
+    <h2>检索结果</h2>
+    <div class="empty" id="hits-empty">提问后这里显示命中的片段</div>
+    <div class="hits" id="hits"></div>
+  </div>
+</aside>
+
+<main class="main">
+  <div class="head">电器维修助手 · 对话</div>
+
+  <div class="chat" id="chat">
+    <div class="turn">
+      <div class="msg bot">
+        <div class="avatar">AI</div>
+        <div class="bubble">
+          你好，我是电器维修知识库助手。我只依据知识库里的资料回答——资料里没有的，我会直说不知道。
+          可以描述现象（「冰箱不制冷了」），也可以直接报故障码（「空调显示 E5」）。
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="composer">
+    <div class="composer-inner">
+      <div class="examples" id="examples"></div>
+      <div class="box">
+        <textarea id="query" rows="1" placeholder="输入问题，Enter 发送，Shift+Enter 换行"></textarea>
+        <button id="send" title="发送">↑</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<div class="modal" id="modal" style="display:none">
+  <div class="modal-card">
+    <div class="modal-head">
+      <div><b id="modal-source"></b> <span id="modal-meta"></span></div>
+      <button id="modal-close" title="关闭（Esc）">×</button>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
+
+<script>
+const $ = (id) => document.getElementById(id);
+const BOT = "AI", USER = "我";
+
+const EXAMPLES = [
+  { tag: "现象",   q: "冰箱不制冷了，压缩机在转但不降温" },
+  { tag: "现象",   q: "洗衣机脱水的时候抖得厉害，还会跑位" },
+  { tag: "故障码", q: "空调显示 E5 是什么故障" },
+  { tag: "故障码", q: "洗衣机报 E4 怎么处理" },
+  { tag: "手册",   q: "维修电器之前要注意哪些安全事项" },
+  { tag: "越界",   q: "今天天气怎么样" },
+];
+
+let busy = false;
+let current = null;   // 当前正在流式填充的 DOM 引用
+
+const esc = (s) => String(s).replace(/[&<>"]/g,
+  c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+/* 页面初始状态（含欢迎语），「清空」就是把它还原回去 */
+const INITIAL_CHAT = $("chat").innerHTML;
+
+/* ---------- 选项加载 ---------- */
+async function loadOptions() {
+  try {
+    const [models, collections] = await Promise.all([
+      fetch("/models").then(r => r.json()),
+      fetch("/collections").then(r => r.json()),
+    ]);
+    $("model").innerHTML = models.map(m =>
+      `<option value="${esc(m.id)}">${esc(m.provider)} · ${esc(m.model)}</option>`).join("");
+    $("collection").innerHTML = collections.length
+      ? collections.map(c => `<option value="${esc(c)}">${esc(c)}</option>`).join("")
+      : `<option value="">（还没有知识库）</option>`;
+    if (!models.length) $("model").innerHTML = `<option value="">没有可用模型</option>`;
+  } catch (e) {
+    $("model").innerHTML = `<option value="">加载失败</option>`;
+  }
+}
+
+/* ---------- 渲染一条消息 ---------- */
+function addMessage(role, text) {
+  const turn = document.createElement("div");
+  turn.className = "turn";
+  turn.innerHTML = `
+    <div class="msg ${role}">
+      <div class="avatar">${role === "user" ? USER : BOT}</div>
+      <div class="bubble">${esc(text ?? "")}</div>
+    </div>`;
+  $("chat").appendChild(turn);
+  scrollDown();
+  return turn.querySelector(".bubble");
+}
+
+/* 助手气泡里预置三个容器：思考 / 正文 / 引用。
+   虽然事件到达顺序是「引用 → 思考 → 正文」，但展示顺序按阅读习惯排。 */
+function prepareBotBubble() {
+  const bubble = addMessage("bot", "");
+  bubble.classList.add("pending");
+  bubble.innerHTML = `
+    <details class="think" style="display:none">
+      <summary>思考过程</summary><div class="body"></div>
+    </details>
+    <div class="answer"></div>
+    <div class="cite" style="display:none"></div>`;
+  return {
+    bubble,
+    answer: bubble.querySelector(".answer"),
+    think: bubble.querySelector(".think"),
+    thinkBody: bubble.querySelector(".think .body"),
+    cite: bubble.querySelector(".cite"),
+  };
+}
+
+function scrollDown() {
+  const chat = $("chat");
+  chat.scrollTop = chat.scrollHeight;
+}
+
+/* 侧栏：把这一次检索命中的片段列出来，供对照回答是否「有据可依」。
+   侧栏窄，正文只露 4 行，点开看全文。 */
+let lastHits = [];
+
+function renderHits(list) {
+  lastHits = list;
+  $("hits-empty").style.display = list.length ? "none" : "";
+  $("hits").innerHTML = list.map((h, i) => `
+    <div class="hit" data-i="${i}">
+      <div class="hit-head">
+        <b>${esc(h.source ?? "—")}</b>
+        <span>${h.score ?? ""}</span>
+      </div>
+      <p>${esc(h.text ?? "")}</p>
+    </div>`).join("");
+}
+
+function openHit(i) {
+  const h = lastHits[i];
+  if (!h) return;
+  $("modal-source").textContent = h.source ?? "—";
+  $("modal-meta").textContent = [h.id, h.score != null ? `分数 ${h.score}` : ""]
+    .filter(Boolean).join("  ·  ");
+  $("modal-body").textContent = h.text ?? "";
+  $("modal").style.display = "flex";
+}
+
+const closeHit = () => { $("modal").style.display = "none"; };
+
+/* ---------- SSE 解析 ---------- */
+function parseFrame(frame) {
+  let event = "message", data = "";
+  for (const line of frame.split("\n")) {
+    if (line.startsWith("event: ")) event = line.slice(7).trim();
+    else if (line.startsWith("data: ")) data += line.slice(6);
+  }
+  return { event, data };
+}
+
+/* ---------- 发送 ---------- */
+async function send(text) {
+  const query = (text ?? $("query").value).trim();
+  if (busy || !query) return;
+
+  busy = true;
+  $("send").disabled = true;
+  $("query").value = "";
+  autoGrow();
+
+  addMessage("user", query);
+  $("hits").innerHTML = "";
+  $("hits-empty").style.display = "";
+  current = prepareBotBubble();
+
+  try {
+    const resp = await fetch("/chat/stream", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        query,
+        model_id: $("model").value || null,
+        reasoning: $("reasoning").checked,
+        collection: $("collection").value || null,
+      }),
+    });
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+
+    const reader = resp.body.getReader();
+    const decoder = new TextDecoder();
+    let buffer = "";
+
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      buffer += decoder.decode(value, { stream: true });
+
+      const frames = buffer.split("\n\n");
+      buffer = frames.pop();          // 尾帧可能不完整，留到下一轮
+      for (const frame of frames) {
+        if (!frame.trim()) continue;
+        const { event, data } = parseFrame(frame);
+        const payload = data ? JSON.parse(data) : null;
+
+        if (event === "sources") {
+          renderHits(payload);
+          current.cite.style.display = "";
+          current.cite.innerHTML = payload.map(s =>
+            `<span><b>${esc(s.source ?? "—")}</b> · ${esc((s.text ?? "").slice(0, 40))}…</span>`).join("");
+        } else if (event === "reasoning") {
+          current.think.style.display = "";
+          current.thinkBody.textContent += payload;
+        } else if (event === "token") {
+          current.answer.textContent += payload;
+        } else if (event === "error") {
+          current.answer.innerHTML = `<span class="err">${esc(payload)}</span>`;
+        }
+        scrollDown();
+      }
+    }
+  } catch (e) {
+    current.answer.innerHTML = `<span class="err">请求失败：${esc(e.message)}</span>`;
+  } finally {
+    current.bubble.classList.remove("pending");
+    busy = false;
+    $("send").disabled = false;
+    scrollDown();
+  }
+}
+
+/* ---------- 输入框自适应高度 ---------- */
+function autoGrow() {
+  const el = $("query");
+  el.style.height = "auto";
+  el.style.height = Math.min(el.scrollHeight, 140) + "px";
+}
+
+/* ---------- 绑定 ---------- */
+$("send").onclick = () => send();
+$("hits").onclick = (e) => {
+  const card = e.target.closest(".hit");
+  if (card) openHit(Number(card.dataset.i));
+};
+$("modal-close").onclick = closeHit;
+$("modal").onclick = (e) => { if (e.target === $("modal")) closeHit(); };
+document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeHit(); });
+$("query").addEventListener("input", autoGrow);
+$("query").addEventListener("keydown", (e) => {
+  if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); send(); }
+});
+$("clear").onclick = () => {
+  if (busy) return;
+  $("chat").innerHTML = INITIAL_CHAT;
+  $("hits").innerHTML = "";
+  $("hits-empty").style.display = "";
+  $("query").value = "";
+  autoGrow();
+  $("query").focus();
+};
+
+$("examples").innerHTML = EXAMPLES.map(e =>
+  `<button data-q="${esc(e.q)}"><em>${e.tag}</em>${esc(e.q)}</button>`).join("");
+$("examples").querySelectorAll("button").forEach(b => {
+  b.onclick = () => send(b.dataset.q);
+});
+
+loadOptions();
+</script>
+</body>
+</html>
