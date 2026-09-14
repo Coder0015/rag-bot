@@ -206,6 +206,8 @@ python evaluation/run_eval.py --rebuild  # 语料变了之后先删库重建
 
 ## 🖥️ 使用方式
 
+![界面截图](assets/screenshot.png)
+
 启动后打开 **`http://127.0.0.1:8000/`**：
 
 1. 左栏选择**模型**（没有可选的就检查 `.env` 里 `OLLAMA_CHAT_MODEL` 是否填了）
